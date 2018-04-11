@@ -25,6 +25,6 @@ app.use(function(err, req, res, next){
 });
 
 // listen for requests
-app.listen(process.env.PORT, function(){
+app.listen(process.env.PORT ||80, function(){
     console.log('now listening for requests');
 });
